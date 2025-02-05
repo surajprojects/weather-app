@@ -21,7 +21,7 @@ This is a simple Weather App built using HTML, CSS, and JavaScript. Users can en
 
 The app fetches weather data from:
 ```
-http://api.weatherapi.com/v1/current.json?key=12345&q=india&aqi=no
+https://api.weatherapi.com/v1/current.json?key=12345&q=india&aqi=no
 ```
 
 ## Deployment
