@@ -4,7 +4,7 @@ const showResult = document.querySelector("#showResult");
 
 async function searchWeather(location) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=6c4429b3eb4d4691ad5114853242901&q=${location}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=6c4429b3eb4d4691ad5114853242901&q=${location}&aqi=no`);
         const result = await response.json();
         if (response.ok) {
             console.log(result)
