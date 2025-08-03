@@ -1,0 +1,650 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #c1c3c7;
+    margin: 0;
+    padding: 0;
+}
+
+#rootWrapper {
+    margin: 3rem 0;
+    height: 48rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#container1 {
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 3rem;
+}
+
+#container2 {
+    background-color: #f7f6f9;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 3rem;
+}
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    border: 1px solid #f7f7f7;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+}
+
+#searchClearBtn,
+#searchBtn {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    padding-bottom: 0rem;
+    border-radius: 100%;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #e6e6e6;
+    }
+}
+
+#currentWeatherIcon {
+    margin-top: 1.6rem;
+    width: auto;
+    height: 16rem;
+    color: #d6d6d6;
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentTempCel,
+#currentTempFah {
+    margin: 0;
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: -0.5rem;
+}
+
+.currentTempDegree {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 0.6rem;
+}
+
+#currentDayTime {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#currentDayTime span {
+    color: #c2c3c4;
+}
+
+#currentWeatherCondition {
+    font-size: 1rem;
+}
+
+#locationIcon {
+    transform: translateY(0.2rem);
+}
+
+#locationIcon+p {
+    display: inline;
+}
+
+#navWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navTitle {
+    margin: 0;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    font-weight: 600;
+}
+
+#forecastTitle {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    font-weight: 600;
+}
+
+#tempDisplayStyle {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.tempDisplay {
+    font-weight: 700;
+    margin: 0 0.2rem;
+    padding: 0 0.6rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempDisplay:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.tempDisplaySelected {
+    color: white;
+    background-color: black;
+
+    &:hover {
+        color: #e9e9e9;
+        background-color: black;
+    }
+}
+
+.allCards {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+}
+
+#humidityCard,
+#forecastAllCards .weatherInfoCardForecast:first-child {
+    margin-left: 0;
+}
+
+#forecastAllCards .weatherInfoCardForecast:last-child {
+    margin-right: 0;
+}
+
+.weatherInfoCard {
+    background-color: #fff;
+    width: 12rem;
+    height: 10rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 0 1px 0 #c1c3c7;
+}
+
+.weatherInfoCardForecast {
+    margin-bottom: 0;
+    width: 5rem;
+    height: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.cardTitle {
+    color: #c2c3c4;
+}
+
+.forecastCardTitle {
+    margin: 0;
+    padding: 0;
+}
+
+.cardBody {
+    margin: 0.8rem 0;
+    padding: 0;
+}
+
+.forecastCardBody {
+    margin: 0.8rem 0;
+    padding: 0;
+    width: auto;
+    height: 4.5rem;
+    width: auto;
+    color: #c3c3c3;
+    font-size: 3rem;
+}
+
+.cardDescription {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#cardMetricDisplay {
+    font-size: 2.2rem;
+}
+
+#humidityData,
+#windData,
+#visibilityData {
+    font-size: 4rem;
+}
+
+.cardBody span {
+    font-size: 1.5rem;
+}
+
+#humidityTitle,
+#windTitle,
+#visibility {
+    margin: 0;
+}
+
+.hideElement {
+    display: none !important;
+}
+
+@media (max-width: 1440px) {
+    #rootWrapper {
+        margin: 5rem 0;
+        height: 45rem;
+    }
+
+    #container1,
+    #container2 {
+        padding: 1.39rem;
+    }
+
+    #searchClearBtn,
+    #searchBtn {
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+
+    .currentTempDegree {
+        font-size: 3.6rem;
+    }
+
+    #currentTempCel,
+    #currentTempFah {
+        font-size: 7rem;
+    }
+
+    #currentDayTime {
+        font-size: 1.2rem;
+    }
+
+    #currentTempCel,
+    #currentTempFah,
+    #currentDayTime,
+    #currentDayTime,
+    #currentWeatherCondition,
+    #locationIcon {
+        margin-left: 1rem;
+    }
+
+    #navTitle,
+    #forecastTitle {
+        font-size: 1.6rem;
+    }
+
+    .allCards {
+        margin-top: 1rem;
+    }
+
+    .weatherInfoCard {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    #rootWrapper {
+        height: 95vh;
+        padding: 17rem 6rem;
+        flex-direction: column;
+    }
+
+    #container1 {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container2 {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 0;
+        padding: 3rem;
+    }
+
+    #searchForm {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #searchInput {
+        width: 75%;
+    }
+
+    .currentTempDegree {
+        font-size: 4rem;
+    }
+
+    #currentTempCel,
+    #currentTempFah {
+        font-size: 8rem;
+    }
+
+    #currentDayTime {
+        font-size: 1.4rem;
+    }
+
+    .weatherInfoCard {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .weatherInfoCard.weatherInfoCardForecast {
+        padding: 1.5rem;
+    }
+
+    .weatherInfoCardForecast {
+        width: 5rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    #rootWrapper {
+        padding: 12rem 3.5rem;
+    }
+
+    #container1,
+    #container2 {
+        padding: 2.5rem;
+    }
+
+    .weatherInfoCard {
+        padding: 1.9rem;
+        margin: 0.7rem;
+    }
+
+    .weatherInfoCard.weatherInfoCardForecast {
+        padding: 1.1rem;
+    }
+
+    .weatherInfoCardForecast {
+        width: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #rootWrapper {
+        padding: 17rem 4rem;
+    }
+
+    #searchForm {
+        width: 80%;
+    }
+
+    .weatherInfoCard {
+        padding: 1.4rem;
+        margin: 0.8rem;
+    }
+
+    .cardTitle {
+        font-size: 0.9rem;
+    }
+
+    .cardDescription {
+        font-size: 0.9rem;
+    }
+
+    #humidityCard sup {
+        font-size: 1.8rem;
+        transform: translateY(1rem);
+    }
+
+    #humidityData,
+    #windData,
+    #visibilityData {
+        font-size: 3.2rem;
+    }
+
+    .cardBody span {
+        font-size: 1.2rem;
+    }
+
+    #humidityCard,
+    #forecastAllCards .weatherInfoCardForecast:first-child {
+        margin-left: 0.8rem;
+    }
+
+    #forecastAllCards .weatherInfoCardForecast:last-child {
+        margin-right: 0.8rem;
+    }
+
+    #forecastAllCards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px) {
+    #rootWrapper {
+        padding: 32rem 3rem;
+    }
+
+    #searchForm {
+        width: 85%;
+    }
+
+    .allCards {
+        margin-top: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #rootWrapper {
+        padding: 31rem 2.5rem;
+    }
+
+    #container1,
+    #container2 {
+        padding: 1.8rem;
+    }
+
+    #searchForm {
+        width: 90%;
+    }
+
+    #currentWeatherIcon {
+        margin-top: 0.6rem;
+    }
+
+    .weatherInfoCard {
+        padding: 1.4rem;
+        margin: 1rem;
+    }
+
+    #humidityCard,
+    #forecastAllCards .weatherInfoCardForecast:first-child {
+        margin-left: 1rem;
+    }
+
+    #forecastAllCards .weatherInfoCardForecast:last-child {
+        margin-right: 1rem;
+    }
+
+}
+
+@media (max-width: 575px) {
+    #rootWrapper {
+        padding: 30rem 1.5rem;
+    }
+}
+
+@media (max-width: 537px) {
+    #rootWrapper {
+        padding: 36.5rem 1.5rem;
+    }
+
+    #forecastTitle {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #rootWrapper {
+        padding: 31.5rem 1.5rem;
+    }
+
+    #searchForm {
+        width: 95%;
+    }
+
+    #searchInput {
+        width: 65%;
+    }
+
+    #currentWeatherIcon {
+        margin-top: 0.8rem;
+        height: 14rem;
+        font-size: 8rem;
+    }
+
+    .currentTempDegree {
+        font-size: 3rem;
+    }
+
+    #currentTempCel,
+    #currentTempFah {
+        font-size: 6rem;
+    }
+
+    #currentDayTime {
+        font-size: 1rem;
+    }
+
+    #currentWeatherCondition,
+    #locationIcon,
+    #locationIcon+p {
+        font-size: 0.8rem;
+    }
+
+    #navTitle,
+    #forecastTitle {
+        font-size: 1.4rem;
+        padding: 0.2rem 0;
+    }
+
+    #forecastTitle {
+        margin-top: 0.7rem;
+    }
+
+    .allCards {
+        margin-top: 0.9rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #rootWrapper {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    #container1,
+    #container2 {
+        border-radius: 0;
+        padding: 2.2rem;
+    }
+
+    #navTitle,
+    #forecastTitle {
+        font-size: 1.2rem;
+        padding: 0.4rem 0;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    #container1,
+    #container2 {
+        border-radius: 0;
+        padding: 2rem;
+    }
+
+    #navWrapper {
+        flex-wrap: wrap;
+    }
+
+    .tempDisplaySelected {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 370px) {
+
+    #navTitle,
+    #forecastTitle {
+        font-size: 1rem;
+        padding: 0.2rem 0;
+    }
+
+    #navTitle {
+        transform: translateY(0.3rem);
+    }
+
+    #tempDisplayStyle {
+        padding: 0.2rem;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    #container1,
+    #container2 {
+        padding: 1.4rem;
+    }
+
+    #searchForm {
+        width: 100%;
+    }
+
+    .weatherInfoCard {
+        padding: 1.4rem;
+        margin: 0.8rem;
+    }
+
+    #humidityCard,
+    #forecastAllCards .weatherInfoCardForecast:first-child {
+        margin-left: 0.8rem;
+    }
+
+    #forecastAllCards .weatherInfoCardForecast:last-child {
+        margin-right: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #forecastAllCards {
+        justify-content: center;
+    }
+}
