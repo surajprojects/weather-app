@@ -34,7 +34,6 @@ async function searchWeather(location) {
         const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6c4429b3eb4d4691ad5114853242901&q=${location}&aqi=no&days=3`);
         const result = await response.json();
         if (response.ok) {
-            console.log(result);
             displayData(result);
         } else {
             alert("Please enter correct location name.")
