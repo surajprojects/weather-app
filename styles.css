@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     font-family: "Noto Sans", sans-serif;
     background-color: #c1c3c7;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Layout containers */
 #rootWrapper {
     margin: 3rem 0;
     height: 48rem;
@@ -27,6 +29,7 @@ body {
     padding: 3rem;
 }
 
+/* Search form */
 #searchForm {
     display: flex;
     justify-content: center;
@@ -54,6 +57,7 @@ body {
     }
 }
 
+/* Current weather info */
 #currentWeatherIcon {
     margin-top: 1.6rem;
     width: auto;
@@ -107,6 +111,7 @@ body {
     justify-content: space-between;
 }
 
+/* Highlight title */
 #navTitle {
     margin: 0;
     font-size: 1.8rem;
@@ -115,6 +120,7 @@ body {
     font-weight: 600;
 }
 
+/* Forecast title */
 #forecastTitle {
     margin: 0;
     margin-top: 2rem;
@@ -124,6 +130,7 @@ body {
     font-weight: 600;
 }
 
+/* Temperature toggle wrapper */
 #tempDisplayStyle {
     margin: 0;
     display: flex;
@@ -155,6 +162,7 @@ body {
     }
 }
 
+/* Weather info cards wrapper */
 .allCards {
     margin: 0;
     margin-top: 2rem;
@@ -246,6 +254,10 @@ body {
     display: none !important;
 }
 
+/* Responsive Design */
+/* Adjust sizes for tablets and smaller screens */
+
+/* Slightly smaller fonts and paddings */
 @media (max-width: 1440px) {
     #rootWrapper {
         margin: 5rem 0;
@@ -363,6 +375,7 @@ body {
     }
 }
 
+/* Medium screen tweaks */
 @media (max-width: 1024px) {
     #rootWrapper {
         padding: 12rem 3.5rem;
@@ -387,6 +400,7 @@ body {
     }
 }
 
+/* Shrink for tablets and large phones */
 @media (max-width: 768px) {
     #rootWrapper {
         padding: 17rem 4rem;
@@ -491,6 +505,7 @@ body {
 
 }
 
+/* Mobile phone layout */
 @media (max-width: 575px) {
     #rootWrapper {
         padding: 30rem 1.5rem;
@@ -561,6 +576,7 @@ body {
 
 }
 
+/* Smaller phones layout */
 @media (max-width: 450px) {
     #rootWrapper {
         margin: 0;
@@ -617,6 +633,7 @@ body {
 
 }
 
+/* Ultra small screen fix */
 @media (max-width: 340px) {
 
     #container1,
